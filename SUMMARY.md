@@ -20,6 +20,7 @@
     * [其他操作](jdbc/spring-jdbc/jdbctemplate/others.md)
   * [NamedParameterJdbcTemplate](jdbc/spring-jdbc/namedparameterjdbctemplate.md)
   * [SQLExceptionTranslator](jdbc/spring-jdbc/sqlexceptiontranslator.md)
+  * [Spring提供的数据源](jdbc/spring-jdbc/spring.md)
 
 ## WEB
 
