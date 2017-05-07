@@ -66,5 +66,11 @@ public List<Map<String, Object>> getList() {
 }
 ```
 
+The list returned would look something like this:
+
+```
+[{name=Bob, id=1}, {name=Mary, id=2}]
+```
+
 
 
