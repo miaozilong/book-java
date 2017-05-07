@@ -16,6 +16,7 @@
   * [使用JdbcTemplate](jdbc/spring-jdbc/jdbctemplate.md)
     * [查询](jdbc/spring-jdbc/jdbctemplate/query.md)
     * [更新](jdbc/spring-jdbc/jdbctemplate/updating.md)
+    * [其他操作](jdbc/spring-jdbc/jdbctemplate/.md)
 
 ## WEB
 
