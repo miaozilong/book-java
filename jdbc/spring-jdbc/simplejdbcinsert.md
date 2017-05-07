@@ -54,5 +54,9 @@ public class JdbcActorDao implements ActorDao {
 }
 ```
 
+The main difference when executing the insert by this second approach is that you do not add the id to the Map and you call the`executeAndReturnKey`method. This returns a`java.lang.Number`object with which you can create an instance of the numerical type that is used in our domain class. You cannot rely on all databases to return a specific Java class here;`java.lang.Number`is the base class that you can rely on. If you have multiple auto-generated columns, or the generated values are non-numeric, then you can use a`KeyHolder`that is returned from the`executeAndReturnKeyHolder`method.
+
+
+
 
 
