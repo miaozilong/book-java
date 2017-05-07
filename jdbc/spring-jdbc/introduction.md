@@ -14,51 +14,7 @@ JDBC作为Java平台的访问关系数据库的标准，其成功是 有目共�
 
 While working with the database using plain old JDBC, it becomes cumbersome to write unnecessary code to handle exceptions, opening and closing database connections, etc. However, Spring JDBC Framework takes care of all the low-level details starting from opening the connection, prepare and execute the SQL statement, process exceptions, handle transactions and finally close the connection.
 
-# **Spring JDBC - who does what?**
-
-| Action | Spring | You |
-| :--- | :--- | :--- |
-
-
-| Define connection parameters. |  | X |
-| :--- | :--- | :--- |
-
-
-| Open the connection. | X |  |
-| :--- | :--- | :--- |
-
-
-| Specify the SQL statement. |  | X |
-| :--- | :--- | :--- |
-
-
-| Declare parameters and provide parameter values |  | X |
-| :--- | :--- | :--- |
-
-
-| Prepare and execute the statement. | X |  |
-| :--- | :--- | :--- |
-
-
-| Set up the loop to iterate through the results \(if any\). | X |  |
-| :--- | :--- | :--- |
-
-
-| Do the work for each iteration. |  | X |
-| :--- | :--- | :--- |
-
-
-| Process any exception. | X |  |
-| :--- | :--- | :--- |
-
-
-| Handle transactions. | X |  |
-| :--- | :--- | :--- |
-
-
-| Close the connection, statement and resultset. | X |  |
-| :--- | :--- | :--- |
-
+# ![](/assets/import.png)
 
 
 
