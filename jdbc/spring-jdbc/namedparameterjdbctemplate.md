@@ -48,7 +48,7 @@ One nice feature related to the`NamedParameterJdbcTemplate`\(and existing in the
 
 Another`SqlParameterSource`implementation is the`BeanPropertySqlParameterSource`class. This class wraps an arbitrary JavaBean \(that is, an instance of a class that adheres to[the JavaBean conventions](http://www.oracle.com/technetwork/java/javase/documentation/spec-136004.html)\), and uses the properties of the wrapped JavaBean as the source of named parameter values.
 
-```
+```java
 public class Actor {
 
     private Long id;
@@ -69,6 +69,25 @@ public class Actor {
 
     // setters omitted...
 
+}
+```
+
+```java
+// some JDBC-backed DAO class...
+private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+}
+
+public int countOfActors(Actor exampleActor) {
+
+    // notice how the named parameters match the properties of the above 'Actor' class
+    String sql = "select count(*) from T_ACTOR where first_name = :firstName and last_name = :lastName";
+
+    SqlParameterSource namedParameters = new BeanPropertySqlParameterSource(exampleActor);
+
+    return this.namedParameterJdbcTemplate.queryForObject(sql, namedParameters, Integer.class);
 }
 ```
 
