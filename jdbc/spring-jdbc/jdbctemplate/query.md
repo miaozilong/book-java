@@ -2,20 +2,20 @@
 
 查询行数
 
-```
+```java
 int rowCount = this.jdbcTemplate.queryForObject("select count(*) from t_actor", Integer.class);
 ```
 
 绑定一个变量
 
-```
+```java
 int countOfActorsNamedJoe = this.jdbcTemplate.queryForObject(
         "select count(*) from t_actor where first_name = ?", Integer.class, "Joe");
 ```
 
 查询一个字符串
 
-```
+```java
 String lastName = this.jdbcTemplate.queryForObject(
         "select last_name from t_actor where id = ?",
         new Object[]{1212L}, String.class);
@@ -23,7 +23,7 @@ String lastName = this.jdbcTemplate.queryForObject(
 
 查询一个对象
 
-```
+```java
 Actor actor = this.jdbcTemplate.queryForObject(
         "select first_name, last_name from t_actor where id = ?",
         new Object[]{1212L},
