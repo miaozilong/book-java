@@ -25,5 +25,5 @@ public class JdbcActorDao implements ActorDao {
 }
 ```
 
-
+The execute method used here takes a plain`java.utils.Map`as its only parameter. The important thing to note here is that the keys used for the Map must match the column names of the table as defined in the database. This is because we read the metadata in order to construct the actual insert statement.
 
