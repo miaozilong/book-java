@@ -6,5 +6,11 @@ this.jdbcTemplate.update(
         "Leonor", "Watling");
 ```
 
+```java
+this.jdbcTemplate.update(
+        "update t_actor set last_name = ? where id = ?",
+        "Banjo", 5276L);
+```
+
 
 
