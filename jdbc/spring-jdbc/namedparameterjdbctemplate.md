@@ -1,0 +1,2 @@
+NamedParameterJdbcTemplate能让JDBC执行时语句带上命名参数 而不在仅仅使用之前使用的"?"作为参数，NamedParameterJdbcTemplate是在JdbcTemplate基础上进行了封装，本节只介绍NamedParameterJdbcTemplate与JdbcTemplate不同之处
+

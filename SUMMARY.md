@@ -17,7 +17,7 @@
     * [查询](jdbc/spring-jdbc/jdbctemplate/query.md)
     * [更新数据](jdbc/spring-jdbc/jdbctemplate/updating.md)
     * [其他操作](jdbc/spring-jdbc/jdbctemplate/others.md)
-  * NamedParameterJdbcTemplate
+  * [NamedParameterJdbcTemplate](jdbc/spring-jdbc/namedparameterjdbctemplate.md)
 
 ## WEB
 
