@@ -18,6 +18,7 @@
     * [更新数据](jdbc/spring-jdbc/jdbctemplate/updating.md)
     * [其他操作](jdbc/spring-jdbc/jdbctemplate/others.md)
   * [NamedParameterJdbcTemplate](jdbc/spring-jdbc/namedparameterjdbctemplate.md)
+  * [SQLExceptionTranslator](jdbc/spring-jdbc/sqlexceptiontranslator.md)
 
 ## WEB
 
