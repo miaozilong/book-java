@@ -44,5 +44,33 @@ public int countOfActorsByFirstName(String firstName) {
 }
 ```
 
+One nice feature related to the`NamedParameterJdbcTemplate`\(and existing in the same Java package\) is the`SqlParameterSource`interface. You have already seen an example of an implementation of this interface in one of the previous code snippet \(the`MapSqlParameterSource`class\). An`SqlParameterSource`is a source of named parameter values to a`NamedParameterJdbcTemplate`. The`MapSqlParameterSource`class is a very simple implementation that is simply an adapter around a`java.util.Map`, where the keys are the parameter names and the values are the parameter values.
+
+Another`SqlParameterSource`implementation is the`BeanPropertySqlParameterSource`class. This class wraps an arbitrary JavaBean \(that is, an instance of a class that adheres to[the JavaBean conventions](http://www.oracle.com/technetwork/java/javase/documentation/spec-136004.html)\), and uses the properties of the wrapped JavaBean as the source of named parameter values.
+
+```
+public class Actor {
+
+    private Long id;
+    private String firstName;
+    private String lastName;
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public Long getId() {
+        return this.id;
+    }
+
+    // setters omitted...
+
+}
+```
+
 
 
