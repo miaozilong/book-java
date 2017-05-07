@@ -2,6 +2,8 @@
 
 * JdbcTemplate
 
+  * _NamedParameterJdbcTemplate_
+
 * SimpleJdbcInsert
 
 * SimplejdbcCall
