@@ -39,7 +39,7 @@ Actor actor = this.jdbcTemplate.queryForObject(
 
 查询一组对象
 
-```
+```java
 List<Actor> actors = this.jdbcTemplate.query(
         "select first_name, last_name from t_actor",
         new RowMapper<Actor>() {
