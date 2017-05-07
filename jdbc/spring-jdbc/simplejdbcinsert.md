@@ -87,5 +87,9 @@ public class JdbcActorDao implements ActorDao {
 }
 ```
 
+### 使用SqlParameterSource提供参数值
+
+参考：https://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html\#jdbc-simple-jdbc-parameters
+
 
 
