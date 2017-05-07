@@ -12,5 +12,11 @@ this.jdbcTemplate.update(
         "Banjo", 5276L);
 ```
 
+```java
+this.jdbcTemplate.update(
+        "delete from actor where id = ?",
+        Long.valueOf(actorId));
+```
+
 
 
