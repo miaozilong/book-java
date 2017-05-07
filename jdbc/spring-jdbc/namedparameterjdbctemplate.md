@@ -26,7 +26,7 @@ Alternatively, you can pass along named parameters and their corresponding value
 
 同样，也可使用Map的样式插入变量到NamedParameterJdbcTemplate对象中
 
-```
+```java
 // some JDBC-backed DAO class...
 private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
@@ -43,8 +43,6 @@ public int countOfActorsByFirstName(String firstName) {
     return this.namedParameterJdbcTemplate.queryForObject(sql, namedParameters,  Integer.class);
 }
 ```
-
-
 
 
 
