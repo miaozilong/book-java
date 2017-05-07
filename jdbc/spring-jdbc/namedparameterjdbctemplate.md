@@ -91,7 +91,5 @@ public int countOfActors(Actor exampleActor) {
 }
 ```
 
-
-
-
+Remember that the NamedParameterJdbcTemplate class wraps a classic JdbcTemplate template; if you need access to the wrapped JdbcTemplate instance to access functionality only present in the JdbcTemplate class, you can use the getJdbcOperations\(\) method to access the wrapped JdbcTemplate through the JdbcOperations interface.
 
