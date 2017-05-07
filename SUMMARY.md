@@ -16,10 +16,10 @@
   * [使用JdbcTemplate](jdbc/spring-jdbc/jdbctemplate.md)
     * [查询](jdbc/spring-jdbc/jdbctemplate/query.md)
     * [更新数据](jdbc/spring-jdbc/jdbctemplate/updating.md)
+    * [获取自动生成的值](jdbc/retrieving-auto-generated-keys.md)
     * [其他操作](jdbc/spring-jdbc/jdbctemplate/others.md)
   * [NamedParameterJdbcTemplate](jdbc/spring-jdbc/namedparameterjdbctemplate.md)
   * [SQLExceptionTranslator](jdbc/spring-jdbc/sqlexceptiontranslator.md)
-* [Retrieving auto-generated keys](jdbc/retrieving-auto-generated-keys.md)
 
 ## WEB
 
