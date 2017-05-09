@@ -27,6 +27,12 @@
 
 ## WEB
 
+* HTML
+* CSS
+* [JS](web/js.md)
+  * [jQuery](web/jquery.md)
+* Bootstrap
+
 ## Servlet/JSP
 
 ## JavaEE
