@@ -31,7 +31,7 @@
 * CSS
 * [JS](web/js.md)
   * [jQuery](web/jquery.md)
-* Bootstrap
+* [Bootstrap](web/bootstrap.md)
 
 ## Servlet/JSP
 
