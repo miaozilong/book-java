@@ -28,7 +28,7 @@
 ## WEB
 
 * [HTML](web/html.md)
-* CSS
+* [CSS](web/css.md)
 * [JS](web/js.md)
   * [jQuery](web/jquery.md)
 * [Bootstrap](web/bootstrap.md)
