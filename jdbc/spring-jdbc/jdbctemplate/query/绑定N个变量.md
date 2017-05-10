@@ -2,21 +2,19 @@ The SQL standard allows for selecting rows based on an expression that includes 
 
 Be careful when passing in many values. The JDBC standard does not guarantee that you can use more than 100 values for an`in`expression list. Various databases exceed this number, but they usually have a hard limit for how many values are allowed. Oracle’s limit is 1000.
 
-
-
-```
-	@Test
-	public void test3() {
-		DataSource ds=new ComboPooledDataSource();
-		NamedParameterJdbcTemplate npjt=new NamedParameterJdbcTemplate(ds);
-		Map<String,Object> maps=new HashMap<>();
-		maps.put("ids", Arrays.asList(1,2,3));
-		List<User> users=npjt.query("select id,username from t_user where id in (:ids)", 
-				maps,
-				new BeanPropertyRowMapper<User>(User.class)
-				);
-		System.out.println(users);
-	}
+```java
+    @Test
+    public void test3() {
+        DataSource ds=new ComboPooledDataSource();
+        NamedParameterJdbcTemplate npjt=new NamedParameterJdbcTemplate(ds);
+        Map<String,Object> maps=new HashMap<>();
+        maps.put("ids", Arrays.asList(1,2,3));
+        List<User> users=npjt.query("select id,username from t_user where id in (:ids)", 
+                maps,
+                new BeanPropertyRowMapper<User>(User.class)
+                );
+        System.out.println(users);
+    }
 ```
 
 
