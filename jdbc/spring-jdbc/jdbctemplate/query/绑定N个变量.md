@@ -19,5 +19,3 @@ Be careful when passing in many values. The JDBC standard does not guarantee tha
 
 
 
-[^1]: 不支持.
-
