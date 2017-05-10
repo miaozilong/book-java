@@ -1,16 +1,5 @@
 ```java
-    @Test
-    public void test3() {
-        DataSource ds=new ComboPooledDataSource();
-        NamedParameterJdbcTemplate npjt=new NamedParameterJdbcTemplate(ds);
-        Map<String,Object> maps=new HashMap<>();
-        maps.put("ids", Arrays.asList(1,2,3));
-        List<User> users=npjt.query("select id,username from t_user where id in (:ids)", 
-                maps,
-                new BeanPropertyRowMapper<User>(User.class)
-                );
-        System.out.println(users);
-    }
+
 ```
 
 The SQL standard allows for selecting rows based on an expression that includes a variable list of values. A typical example would be
@@ -30,4 +19,23 @@ takes the latter approach. Pass in the values as a
 `java.util.List`
 
 of primitive objects. This list will be used to insert the required placeholders and pass in the values during the statement execution.
+
+
+
+```
+@Test
+public void test3() {
+DataSource ds=new ComboPooledDataSource();
+NamedParameterJdbcTemplate npjt=new NamedParameterJdbcTemplate(ds);
+Map<String,Object> maps=new HashMap<>();
+maps.put("ids", Arrays.asList(1,2,3));
+List<User> users=npjt.query("select id,username from t_user where id in (:ids)", 
+maps,
+new BeanPropertyRowMapper<User>(User.class)
+);
+System.out.println(users);
+}
+```
+
+
 
