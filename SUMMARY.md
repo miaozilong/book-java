@@ -12,7 +12,7 @@
 
 * [Spring JDBC](jdbc/spring-jdbc.md)
   * [introduction](jdbc/spring-jdbc/introduction.md)
-  * [Spring JDBC提供的类库](jdbc/spring-jdbc/spring-jdbc.md)
+  * [Spring JDBC提供的类库](jdbc/spring-jdbc/Spring JDBC提供的类库.md)
   * [使用JdbcTemplate](jdbc/spring-jdbc/jdbctemplate.md)
     * [查询](jdbc/spring-jdbc/jdbctemplate/query.md)
     * [更新数据](jdbc/spring-jdbc/jdbctemplate/updating.md)
