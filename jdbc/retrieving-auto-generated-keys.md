@@ -18,7 +18,7 @@ jdbcTemplate.update(
 // keyHolder.getKey() now contains the generated key
 ```
 
-## 此方法较复杂，开发中建议使用SimpleJdbcInsert对象进行操作
+## 此方法较复杂，开发中建议使用SimpleJdbcInsert对象获取自动增长的值
 
 
 
