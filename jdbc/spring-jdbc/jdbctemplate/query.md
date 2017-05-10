@@ -52,6 +52,12 @@ List<Actor> actors = this.jdbcTemplate.query(
         });
 ```
 
+//queryForObject只能查询单个对象，要求sql语句返回1行记录
+
+		//如果需要查询一组对象，使用query方法	特别注意，不是使用queryForList方法
+
+
+
 In addition to the single result query methods, several methods return a list with an entry for each row that the query returned. The most generic method is`queryForList(..)`which returns a`List`where each entry is a`Map`with each entry in the map representing the column value for that row. If you add a method to the above example to retrieve a list of all the rows, it would look like this:
 
 ```java
