@@ -15,6 +15,7 @@
   * [Spring JDBC提供的类库](jdbc/spring-jdbc/Spring JDBC提供的类库.md)
   * [使用JdbcTemplate](jdbc/spring-jdbc/使用jdbctemplate.md)
     * [查询](jdbc/spring-jdbc/jdbctemplate/query.md)
+      * [绑定N个变量](jdbc/spring-jdbc/jdbctemplate/query/绑定N个变量.md)
     * [更新数据](jdbc/spring-jdbc/jdbctemplate/updating.md)
     * [获取自动生成的值](jdbc/retrieving-auto-generated-keys.md)
     * [其他操作](jdbc/spring-jdbc/jdbctemplate/others.md)
